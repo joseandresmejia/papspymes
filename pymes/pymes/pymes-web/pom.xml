@@ -7,10 +7,11 @@
     <artifactId>pymes</artifactId>
     <version>1.0</version>
   </parent>
-  <groupId>com.pvpymes.web</groupId>
+  <groupId>com.pymes</groupId>
   <artifactId>pymes-web</artifactId>
   <version>1.0</version>
-  <name>pymes-web</name>
+  <packaging>war</packaging>
+  <name>pymes-web Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -20,4 +21,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <finalName>pymes-web</finalName>
+  </build>
 </project>

@@ -1,26 +1,93 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.pvpymes</groupId>
-    <artifactId>pymes</artifactId>
-    <version>1.0</version>
-  </parent>
-  <groupId>com.pvpymes</groupId>
-  <artifactId>pymes-persistencia</artifactId>
-  <version>1.0</version>
-  <name>pymes-persistencia</name>
-  <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.pvpymes</groupId>
+		<artifactId>pymes</artifactId>
+		<version>1.0</version>
+	</parent>
+	<groupId>com.pvpymes</groupId>
+	<artifactId>pymes-persistencia</artifactId>
+	<version>1.0</version>
+	<name>pymes-persistencia</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>3.2.1.RELEASE</spring.version>
+		<spring.data.version>1.4.1.RELEASE</spring.data.version>
+	</properties>
+<dependencies>
+	
+	<dependency>
+	    <groupId>commons-dbcp</groupId>
+	    <artifactId>commons-dbcp</artifactId>
+	    <version>1.2.2</version>
+	</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-dao</artifactId> 
+			<version>2.0.8</version> <exclusions> <exclusion> <artifactId>commons-logging</artifactId> 
+			<groupId>commons-logging</groupId> </exclusion> </exclusions> </dependency> -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc5</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>aopalliance</groupId>
+			<artifactId>aopalliance</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.ibm.db2.jcc/db2jcc4 -->
+		<dependency>
+			<groupId>com.ibm.db2.jcc</groupId>
+			<artifactId>db2jcc4</artifactId>
+			<version>10.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.ibm.db2/db2jcc_license_cu -->
+		<dependency>
+			<groupId>com.ibm.db2</groupId>
+			<artifactId>db2jcc_license_cu</artifactId>
+			<version>9.7</version>
+		</dependency>
+		
+			<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc5</artifactId>
+			<version>11.2.0.3</version>
+			<type>jar</type>
+			<optional>false</optional>
+		</dependency>
+
+	</dependencies>
 </project>
